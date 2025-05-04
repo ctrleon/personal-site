@@ -81,3 +81,10 @@ showPostsOnHomePage = ""
 # Show the previous and next post in your timeline: "true", "false"
 # Incompatible with Weight
 togglePreviousAndNextButtons = false
+
+# Display social icons below the avatar
+socialIcons = [
+{name = "github", url = "https://github.com/ctrleon"},
+{name = "email", url = "mailto:cristinaleon@posteo.com"},
+{name = "rss", url = "https://example.com"},
+]
