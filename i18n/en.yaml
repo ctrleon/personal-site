@@ -1,0 +1,8 @@
+- id: "read_more"
+  translation: "Read More"
+- id: "tags"
+  translation: "Tags"
+- id: "about"
+  translation: "About"
+- id: "published_on"
+  translation: "Published on"
