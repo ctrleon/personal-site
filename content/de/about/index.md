@@ -16,4 +16,4 @@ Außerdem schwimme ich, fahre Paddleboard und höre leidenschaftlich gerne latei
 Diese statische Seite wurde mit [Hugo](https://gohugo.io) und dem [Gokarna-Theme](https://github.com/gokarna-theme/gokarna-hugo) erstellt.
 Gehostet wird sie auf [Cloudflare Pages](https://pages.cloudflare.com), der Quellcode ist [auf GitHub](https://github.com/ctrleon/personal-site) verfügbar.
 
-Diese Webseite ist auch in [Englisch](/en/) verfügbar.
+Diese Webseite ist auch in [Englisch]({{< relref path="/about.md" lang="en" >}}) verfügbar.

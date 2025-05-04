@@ -16,4 +16,4 @@ I also enjoy swimming, paddleboarding and Latin music.
 This website is a static site built with [Hugo](https://gohugo.io) using the [Gokarna](https://github.com/gokarna-theme/gokarna-hugo) theme.
 It is hosted on [Cloudflare Pages](https://pages.cloudflare.com), and the source code is [available on GitHub](https://github.com/ctrleon/personal-site).
 
-The site is also available in [German](/de/).
+The site is also available in [German]({{< relref path="/about.md" lang="de" >}}).
