@@ -3,6 +3,11 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 theme = "gokarna"
 title = "Cristina Leon"
+pygmentsStyle = "nord"
+
+[markup]
+[markup.highlight]
+  noClasses = false
 
 [menus]
   [[menus.main]]
@@ -23,6 +28,7 @@ title = "Cristina Leon"
   [[menus.main]]
     identifier = "contact"
     name = "Contact"
+    pageRef = '/contact'
     weight = 4
 
 # Multilingual configuration
@@ -67,7 +73,8 @@ title = "Cristina Leon"
     {name = "rss", url = "/index.xml"},
   ]
   customHeadHTML = '''
-    <!-- Your existing Katex config -->
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/syntax.css">
   '''
 
 [minify]
