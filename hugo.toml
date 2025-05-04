@@ -22,6 +22,11 @@ title = "Cristina Leon"
     name = "Tags"
     url = "/tags/"
     weight = 2
+
+   [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
     
   [[menu.main]]
     # Unique identifiers are required for menu entries without a name property,
@@ -30,7 +35,7 @@ title = "Cristina Leon"
 
     # Absolute URL to external resource
     url = "https://github.com/ctrleon"
-    weight = 3
+    weight = 4
     
     # Surround the menu entry (or name) with HTML content, such as Feather
     # icons: https://feathericons.com
