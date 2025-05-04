@@ -2,7 +2,25 @@ baseURL = "https://example.org/"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 theme = "gokarna"
-title = "Cristina Leon"
+title = "Test"
+
+[menus]
+  [[menus.main]]
+    identifier = 'Posts'
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 1
+  [[menus.main]]
+    identifier = 'about'
+    name = 'About'
+    pageRef = '/about'
+    weight = 2
+  [[menus.main]]
+    identifier = "github"
+    url = "https://github.com/xxx"
+    weight = 3
+    pre = "<span data-feather='github'></span>"
+    newPage = true
 
 # Multilingual configuration
 [languages]
@@ -12,34 +30,9 @@ title = "Cristina Leon"
     languageCode = "en-us"
     contentDir = "content/en"
 
-    # English menu
-    [[languages.en.menu.main]]
-      name = "Posts"
-      url = "/posts/"
-      weight = 1
-
-    [[languages.en.menu.main]]
-      name = "Tags"
-      url = "/tags/"
-      weight = 2
-
-    [[languages.en.menu.main]]
-      name = "About"
-      url = "/about/"
-      weight = 3
-
-    [[languages.en.menu.main]]
-      identifier = "github"
-      url = "https://github.com/ctrleon"
-      weight = 4
-      pre = "<span data-feather='github'></span>"
-      [languages.en.menu.main.params]
-        newPage = true
-
     # English params
     [languages.en.params]
       description = "Computer Science major with a Physics minor at University of Marburg"
-      footer = "Cristina Leon"
       metaKeywords = ["blog", "programming", "germany"]
 
   [languages.de]
@@ -48,34 +41,9 @@ title = "Cristina Leon"
     languageCode = "de-de"
     contentDir = "content/de"
 
-    # German menu 
-    [[languages.de.menu.main]]
-      name = "Beiträge"
-      url = "/de/posts/"
-      weight = 1
-
-    [[languages.de.menu.main]]
-      name = "Schlagwörter"
-      url = "/de/tags/"
-      weight = 2
-
-    [[languages.de.menu.main]]
-      name = "Über mich"
-      url = "/de/about/"
-      weight = 3
-
-    [[languages.de.menu.main]]
-      identifier = "github"
-      url = "https://github.com/ctrleon"
-      weight = 4
-      pre = "<span data-feather='github'></span>"
-      [languages.de.menu.main.params]
-        newPage = true
-
     # German params
     [languages.de.params]
       description = "Informatik-Studentin mit Physik-Nebenfach an der Phillips-Universität Marburg"
-      footer = "Cristina Leon"
       metaKeywords = ["blog", "programmierung", "deutschland"]
 
 # Global params
@@ -90,8 +58,8 @@ title = "Cristina Leon"
   showPostsOnHomePage = ""
   togglePreviousAndNextButtons = false
   socialIcons = [
-    {name = "github", url = "https://github.com/ctrleon"},
-    {name = "email", url = "mailto:cristinaleon@posteo.com"},
+    {name = "github", url = "https://github.com/xxx"},
+    {name = "email", url = "mailto:xxx@posteo.com"},
     {name = "rss", url = "https://example.com"},
   ]
   customHeadHTML = '''
