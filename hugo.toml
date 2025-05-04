@@ -40,51 +40,51 @@ title = "Cristina Leon"
         newPage = true
 
 [params]
-# Choose the color shown when hyperlinks are hovered over
-accentColor = "#FF4D4D"
+    # Choose the color shown when hyperlinks are hovered over
+    accentColor = "#FF4D4D"
 
-# Resource URL for the site avatar (home page and header)
-avatarURL = "/images/avatar.webp"
+    # Resource URL for the site avatar (home page and header)
+    avatarURL = "/images/avatar.webp"
 
-# Describe the avatar for screen readers
-avatarAltText = "Cristina Leon's avatar"
+    # Describe the avatar for screen readers
+    avatarAltText = "Cristina Leon's avatar"
 
-# Set the avatar's size: size-xs, size-s, size-m, size-l & size-xl
-avatarSize = "size-m"
+    # Set the avatar's size: size-xs, size-s, size-m, size-l & size-xl
+    avatarSize = "size-m"
 
-# Configure how post dates are displayed
-dateFormat = "January 2, 2006"
+    # Configure how post dates are displayed
+    dateFormat = "January 2, 2006"
 
-# Home page meta description
-description = "Computer Science major with a Physics minor at University of Marburg"
+    # Home page meta description
+    description = "Computer Science major with a Physics minor at University of Marburg"
 
-# Footer text (i.e. author/project name)
-footer = "Cristina Leon"
+    # Footer text (i.e. author/project name)
+    footer = "Cristina Leon"
 
-# Define SEO keywords
-metaKeywords = ["blog", "programming", "germany"]
+    # Define SEO keywords
+    metaKeywords = ["blog", "programming", "germany"]
 
-# Define how many posts are displayed on the home page
-# showPostsOnHomePage must be "popular" or "recent"
-numberPostsOnHomePage = 4
+    # Define how many posts are displayed on the home page
+    # showPostsOnHomePage must be "popular" or "recent"
+    numberPostsOnHomePage = 4
 
-# Display a "back to top" button on posts and pages: true, false
-# May not render on smaller screen sizes
-showBackToTopButton = true
+    # Display a "back to top" button on posts and pages: true, false
+    # May not render on smaller screen sizes
+    showBackToTopButton = true
 
-# Display posts on the home page:
-# "popular" (order posts by weight)
-# "recent" (order posts by date)
-# "", unset (do not display)
-showPostsOnHomePage = ""
+    # Display posts on the home page:
+    # "popular" (order posts by weight)
+    # "recent" (order posts by date)
+    # "", unset (do not display)
+    showPostsOnHomePage = ""
 
-# Show the previous and next post in your timeline: "true", "false"
-# Incompatible with Weight
-togglePreviousAndNextButtons = false
+    # Show the previous and next post in your timeline: "true", "false"
+    # Incompatible with Weight
+    togglePreviousAndNextButtons = false
 
-# Display social icons below the avatar
-socialIcons = [
-{name = "github", url = "https://github.com/ctrleon"},
-{name = "email", url = "mailto:cristinaleon@posteo.com"},
-{name = "rss", url = "https://example.com"},
-]
+    # Display social icons below the avatar
+    socialIcons = [
+        {name = "github", url = "https://github.com/ctrleon"},
+        {name = "email", url = "mailto:cristinaleon@posteo.com"},
+        {name = "rss", url = "https://example.com"},
+    ]
