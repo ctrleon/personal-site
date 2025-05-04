@@ -1,0 +1,6 @@
+code.language-bash > span.line::before {
+  content: "$";
+  margin-right: 0.6em;
+  color: #4c566a;
+  font-weight: bold;
+}
