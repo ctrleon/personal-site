@@ -20,7 +20,7 @@
       {{ range $index, $element := $menu }}
       <div class="nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}">
         <a class="nav-link scroll-to" href="{{ .URL | relLangURL }}" aria-label="{{ .Identifier }}" {{ if .Params.NewPage }}target="_blank"{{ end }}>
-          {{ .Pre | safeHTML }}{{ i18n .Identifier | default .Name }}{{ .Post | safeHTML }}
+          {{ if .Pre }}<span style="margin-right: 5px;">{{ .Pre | safeHTML }}</span>{{ end }}{{ i18n .Identifier | default .Name }}{{ .Post | safeHTML }}
         </a>
       </div>
       {{ end }}
@@ -34,7 +34,7 @@
           {{- if ne $currentLang .Lang }}
           <div class="nav-link">
             <a class="nav-link" href="{{ .RelPermalink }}" lang="{{ .Lang }}" aria-label="{{ .Language.LanguageName }}">
-              <span class="theme-toggle-icon" data-feather="globe" style="margin-right: 4px;"></span>
+              <span class="theme-toggle-icon" data-feather="globe" style="margin-right: 5px;"></span>
               {{ .Language.LanguageName }}
             </a>
           </div>
@@ -65,7 +65,7 @@
         {{ range $menu }}
         <li class="nav-item">
           <a href="{{ .URL | relLangURL }}" {{ if .Params.NewPage }}target="_blank"{{ end }}>
-            {{ .Pre | safeHTML }}{{ i18n .Identifier | default .Name }}{{ .Post | safeHTML }}
+            {{ if .Pre }}<span style="margin-right: 4px;">{{ .Pre | safeHTML }}</span>{{ end }}{{ i18n .Identifier | default .Name }}{{ .Post | safeHTML }}
           </a>
         </li>
         {{ end }}
@@ -80,4 +80,3 @@
     </div>
   </nav>
 </header>
-
