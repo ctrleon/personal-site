@@ -28,19 +28,25 @@
       <span class="nav-icons-divider"></span>
 
       <!-- Language Switcher -->
-      {{- $currentLang := .Lang }}
-      {{- with site.Home.Translations }}
-        {{- range . }}
-          {{- if ne $currentLang .Lang }}
-          <div class="nav-link">
-            <a class="nav-link" href="{{ .RelPermalink }}" lang="{{ .Lang }}" aria-label="{{ .Language.LanguageName }}">
-              <span class="theme-toggle-icon" data-feather="globe" style="margin-right: 5px;"></span>
-              {{ .Language.LanguageName }}
-            </a>
-          </div>
-          {{- end }}
-        {{- end }}
-      {{- end }}
+      {{ with .Translations }}
+        {{ range . }}
+          {{ if eq .Language.Lang $.Language.Lang }}
+            <div class="nav-link">
+              <a class="nav-link active" aria-current="page" href="{{ .RelPermalink }}" lang="{{ .Lang }}" aria-label="{{ .Language.LanguageName }}">
+                <span class="theme-toggle-icon" data-feather="globe" style="margin-right: 4px;"></span>
+                {{ .Language.LanguageName }}
+              </a>
+            </div>
+          {{ else }}
+            <div class="nav-link">
+              <a class="nav-link" href="{{ .RelPermalink }}" lang="{{ .Lang }}" aria-label="{{ .Language.LanguageName }}">
+                <span class="theme-toggle-icon" data-feather="globe" style="margin-right: 4px;"></span>
+                {{ .Language.LanguageName }}
+              </a>
+            </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
 
       <span class="nav-icons-divider"></span>
 
