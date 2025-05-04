@@ -6,17 +6,7 @@ code.language-bash > span.line::before {
   font-weight: bold;
 }
 
-/* Make language switcher visible in mobile */
-@media only screen and (max-width: 820px) {
-  .nav-hamburger-list .nav-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-  }
-}
-
+/* Button to copy content from code block */
 .copy-button {
   position: absolute;
   right: 10px;
@@ -42,4 +32,19 @@ pre {
   padding: 16px;
   border-radius: 4px;
   overflow: auto;
+}
+
+@media only screen and (max-width: 820px) {
+  /* Make language switcher visible in mobile */
+  .nav-hamburger-list .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  /* Disable code-block copy button in mobile */
+  .copy-button {
+    display: none;
+  }
 }
