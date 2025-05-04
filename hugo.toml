@@ -57,6 +57,7 @@ pygmentsStyle = "nord"
 
 # Global params
 [params]
+  email = "cristinaleon@posteo.com"
   accentColor = "#FF4D4D"
   avatarURL = "/images/avatar.webp"
   avatarAltText = "avatar"
@@ -75,6 +76,7 @@ pygmentsStyle = "nord"
   customHeadHTML = '''
     <link rel="stylesheet" href="/css/custom.css">
     <link rel="stylesheet" href="/css/syntax.css">
+    <script src="/js/codeblock-copy.js"></script>
   '''
 
 [minify]
