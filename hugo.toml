@@ -21,12 +21,9 @@ title = "Cristina Leon"
     pageRef = '/about'
     weight = 3
   [[menus.main]]
-    identifier = "github"
-    name = "GitHub"
-    url = "https://github.com/ctrleon"
+    identifier = "contact"
+    name = "Contact"
     weight = 4
-    pre = "<span data-feather='github'></span>"
-    newPage = true
 
 # Multilingual configuration
 [languages]
@@ -66,6 +63,7 @@ title = "Cristina Leon"
   socialIcons = [
     {name = "github", url = "https://github.com/ctrleon"},
     {name = "email", url = "mailto:cristinaleon@posteo.com"},
+    {name = "gnuprivacyguard", url = ""},
     {name = "rss", url = "https://example.com"},
   ]
   customHeadHTML = '''

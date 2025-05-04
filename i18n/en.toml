@@ -18,3 +18,5 @@
     other = 'Posts'
 [about]
     other = 'About'
+[contact]
+    other = 'Contact'
