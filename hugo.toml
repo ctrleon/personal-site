@@ -2,7 +2,7 @@ baseURL = "https://example.org/"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 theme = "gokarna"
-title = "Test"
+title = "Cristina Leon"
 
 [menus]
   [[menus.main]]
@@ -17,7 +17,7 @@ title = "Test"
     weight = 2
   [[menus.main]]
     identifier = "github"
-    url = "https://github.com/xxx"
+    url = "https://github.com/ctrleon"
     weight = 3
     pre = "<span data-feather='github'></span>"
     newPage = true
@@ -33,7 +33,7 @@ title = "Test"
     # English params
     [languages.en.params]
       description = "Computer Science major with a Physics minor at University of Marburg"
-      metaKeywords = ["blog", "programming", "germany"]
+      metaKeywords = ["blog", "computer science", "university"]
 
   [languages.de]
     languageName = "Deutsch"
@@ -44,13 +44,13 @@ title = "Test"
     # German params
     [languages.de.params]
       description = "Informatik-Studentin mit Physik-Nebenfach an der Phillips-Universität Marburg"
-      metaKeywords = ["blog", "programmierung", "deutschland"]
+      metaKeywords = ["blog", "informatik", "universität"]
 
 # Global params
 [params]
   accentColor = "#FF4D4D"
   avatarURL = "/images/avatar.webp"
-  avatarAltText = "X X's avatar"
+  avatarAltText = "avatar"
   avatarSize = "size-m"
   dateFormat = "January 2, 2006"
   numberPostsOnHomePage = 4
@@ -58,8 +58,8 @@ title = "Test"
   showPostsOnHomePage = ""
   togglePreviousAndNextButtons = false
   socialIcons = [
-    {name = "github", url = "https://github.com/xxx"},
-    {name = "email", url = "mailto:xxx@posteo.com"},
+    {name = "github", url = "https://github.com/ctrleon"},
+    {name = "email", url = "mailto:cristinaleon@posteo.com"},
     {name = "rss", url = "https://example.com"},
   ]
   customHeadHTML = '''
