@@ -28,22 +28,21 @@
       <span class="nav-icons-divider"></span>
 
       <!-- Language Switcher -->
-      <div class="nav-link">
-        <select id="selectLanguage" onchange="location = this.value">
-          {{ $siteLanguages := $.Site.Home.AllTranslations }}
-          {{ $pageLang := .Page.Lang }}
-          {{ range .Page.AllTranslations }}
-            {{ $translation := . }}
-            {{ range $siteLanguages }}
-              {{ if eq $translation.Lang .Lang }}
-                <option value="{{ $translation.RelPermalink }}" {{ if eq $pageLang .Lang }}selected{{ end }}>
-                  {{ .Language.LanguageName }}
-                </option>
-              {{ end }}
-            {{ end }}
-          {{ end }}
-        </select>
-      </div>
+      {{- $currentLang := .Lang }}
+      {{- with site.Home.Translations }}
+        {{- range . }}
+          {{- if ne $currentLang .Lang }}
+          <div class="nav-link">
+            <a class="nav-link" href="{{ .RelPermalink }}" lang="{{ .Lang }}" aria-label="{{ .Language.LanguageName }}">
+              <span class="theme-toggle-icon" data-feather="globe" style="margin-right: 4px;"></span>
+              {{ .Language.LanguageName }}
+            </a>
+          </div>
+          {{- end }}
+        {{- end }}
+      {{- end }}
+
+      <span class="nav-icons-divider"></span>
 
       <!-- Theme toggle -->
       <div class="nav-link dark-theme-toggle">
@@ -81,3 +80,4 @@
     </div>
   </nav>
 </header>
+
