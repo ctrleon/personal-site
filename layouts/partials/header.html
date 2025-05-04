@@ -27,26 +27,7 @@
 
       <span class="nav-icons-divider"></span>
 
-      <!-- Language Switcher -->
-      {{ with .Translations }}
-        {{ range . }}
-          {{ if eq .Language.Lang $.Language.Lang }}
-            <div class="nav-link">
-              <a class="nav-link active" aria-current="page" href="{{ .RelPermalink }}" lang="{{ .Lang }}" aria-label="{{ .Language.LanguageName }}">
-                <span class="theme-toggle-icon" data-feather="globe" style="margin-right: 4px;"></span>
-                {{ .Language.LanguageName }}
-              </a>
-            </div>
-          {{ else }}
-            <div class="nav-link">
-              <a class="nav-link" href="{{ .RelPermalink }}" lang="{{ .Lang }}" aria-label="{{ .Language.LanguageName }}">
-                <span class="theme-toggle-icon" data-feather="globe" style="margin-right: 4px;"></span>
-                {{ .Language.LanguageName }}
-              </a>
-            </div>
-          {{ end }}
-        {{ end }}
-      {{ end }}
+      {{ partial "language-switcher.html" . }}
 
       <span class="nav-icons-divider"></span>
 
@@ -75,6 +56,9 @@
           </a>
         </li>
         {{ end }}
+
+        {{ partial "language-switcher.html" . }}
+
         <li class="nav-item dark-theme-toggle">
           <span class="sr-only dark-theme-toggle-screen-reader-target">{{ i18n "theme" | default "theme" }}</span>
           <a role="switch">
