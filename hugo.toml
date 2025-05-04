@@ -64,7 +64,7 @@ title = "Cristina Leon"
     {name = "github", url = "https://github.com/ctrleon"},
     {name = "email", url = "mailto:cristinaleon@posteo.com"},
     {name = "gnuprivacyguard", url = ""},
-    {name = "rss", url = "https://example.com"},
+    {name = "rss", url = "/index.xml"},
   ]
   customHeadHTML = '''
     <!-- Your existing Katex config -->
