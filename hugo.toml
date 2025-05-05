@@ -70,7 +70,7 @@ pygmentsStyle = "nord"
   socialIcons = [
     {name = "github", url = "https://github.com/ctrleon"},
     {name = "email", url = "mailto:cristinaleon@posteo.com"},
-    {name = "gnuprivacyguard", url = ""},
+    {name = "gnuprivacyguard", url = "/publickey.asc"},
     {name = "rss", url = "/index.xml"},
   ]
   customHeadHTML = '''
