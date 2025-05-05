@@ -42,7 +42,7 @@ pygmentsStyle = "nord"
     # English params
     [languages.en.params]
       description = "Computer Science major with a Physics minor at University of Marburg"
-      metaKeywords = ["blog", "computer science", "university"]
+      metaKeywords = ["blog", "computer science", "university", "marburg"]
 
   [languages.de]
     languageName = "Deutsch"
@@ -53,7 +53,7 @@ pygmentsStyle = "nord"
     # German params
     [languages.de.params]
       description = "Informatik-Studentin mit Physik-Nebenfach an der Phillips-Universität Marburg"
-      metaKeywords = ["blog", "informatik", "universität"]
+      metaKeywords = ["blog", "informatik", "universität", "marburg"]
 
 # Global params
 [params]
