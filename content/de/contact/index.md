@@ -6,7 +6,7 @@ Sie können mich per E-Mail unter [cristinaleon@posteo.com](mailto:cristinaleon@
 
 Für sichere Kommunikation können Sie mir gerne eine [GnuPG](https://gnupg.org)-signierte oder verschlüsselte E-Mail senden.
 Sie können meinen öffentlichen Schlüssel [hier](/publickey.gpg) herunterladen.
-Die Schlüssel-ID lautet XXX und der Fingerabdruck ist XXXX.
+Die Schlüssel-ID lautet `DFE97E5C 9181CFEC`, und der Fingerabdruck ist `0D42 8065 579B 2AEB 4E8B D9DB DFE9 7E5C 9181 CFEC` .
 
 Alternativ können Sie den öffentlichen Schlüssel mit folgendem Shell-Befehl herunterladen und importieren:
 ```bash
