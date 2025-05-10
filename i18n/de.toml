@@ -5,7 +5,7 @@
 [error404]
     other = 'Diese Seite existiert (noch) nicht, gehen Sie zu zurück auf'
 [home]
-    other = 'Startseite'
+    other = 'Los'
 [nothing]
     other = 'Hier gibt es noch nichts zu sehen 😉'
 [previous]
@@ -15,9 +15,9 @@
 [tags]
     other = 'Tags'
 [Posts]
-    other = 'Einträge'
+    other = 'Beiträge'
 [about]
-    other = 'Überblick'
+    other = 'Über mich'
 [contact]
     other = 'Kontakt'
 
