@@ -11,8 +11,15 @@ Hier sammle ich Gedanken zu allem, was ich für teilens- oder bewahrenswert halt
 
 Mein Name ist Cristina Leon und ich studiere **Informatik** (B.Sc.) an der [Philipps-Universität Marburg](https://www.uni-marburg.de), mit dem Schwerpunkt IT-Sicherheit und dem Nebenfach Physik.
 
-In meiner Freizeit bastle ich an meinem **Homeserver** und arbeite an persönlichen **Programmierprojekten**, die ich gerne mit anderen teile.
-Außerdem schwimme ich, fahre Paddleboard und höre leidenschaftlich gerne lateinamerikanische Musik.
+## Interessen
+
+Meine Interessen liegen vor allem im Bereich Linux, Server und Open Source.
+In meiner Freizeit bastle ich an meinem Debian 12 Homeserver und RaspberryPi 4B.
+
+Ich arbeite auch an persönlichen Programmierprojekten, die ich gerne mit anderen teile.
+
+Auf der nicht-technischen Seite höre ich gerne lateinamerikanische Musik.
+Außerdem schwimme ich und fahre Paddleboard.
 
 ## Über diese Webseite
 
