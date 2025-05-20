@@ -19,17 +19,32 @@ code.language-bash > span.line::before {
   color: white;
   font-family: 'Lato', sans-serif;
   font-size: 0.875rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  
+  /* Hide copy button by default */
+  opacity: 0;
+  pointer-events: none;
 }
 
 .copy-button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Show copy button on hover */
+pre:hover .copy-button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 pre {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+
+  /* Wrap long lines instead of scrolling */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 @media only screen and (max-width: 820px) {
