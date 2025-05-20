@@ -9,14 +9,15 @@ title: "Scheduling Signal messages using signal-cli and cron"
 type: "post"
 ---
 
-I prefer using Signal for my private chats because it's open source.
-Signal does not provide a direct API but there is a command line interface [signal-cli](https://github.com/AsamK/signal-cli) available.
+[Signal](https://signal.org/) is an open-source, encrypted instant messaging service developed by the non-profit [Signal Foundation](https://signalfoundation.org/) and its subsidiary, Signal Messenger LLC. It is funded through grants and donations.
+
+While Signal doesn’t offer a public API, a community-maintained command-line interface, [signal-cli](https://github.com/AsamK/signal-cli), provides a way to interact with the service programmatically.
 
 ## Installation
 
-You can build signal-cli, use the provided binary files, the Docker image or a community-maintained Linux package if available for your distribution of choice.
+For the most up-to-date installation instructions and alternative methods, refer to the [installation section](https://github.com/AsamK/signal-cli?tab=readme-ov-file#installation) of the project’s README.
+Here, I’ll walk through the installation using a community-maintained APT repository.
 
-I prefer using the Linux packages to manage all of my packages on my Debian 12 server.
 On Debian/Ubuntu based systems run the following commands:
 
 ```bash
@@ -28,7 +29,8 @@ sudo apt-get install signal-cli-dbus-service # Install DBus service
 
 ## Account activation
 
-Register a phone number with SMS verification with the following command.
+Signal uses mobile telephone numbers to register and manage user accounts.
+Register a phone number with SMS verification with the `register` command.
 Account is the phone number in internatinal format you want to register.
 
 ```bash
