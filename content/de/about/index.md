@@ -21,7 +21,7 @@ Ich arbeite auch an persönlichen Programmierprojekten, die ich gerne mit andere
 Auf der nicht-technischen Seite höre ich gerne lateinamerikanische Musik.
 Außerdem schwimme ich und fahre Paddleboard.
 
-## Über diese Webseite
+## Über diese Website
 
 Diese statische Seite wurde mit [Hugo](https://gohugo.io) und dem [Gokarna-Theme](https://github.com/gokarna-theme/gokarna-hugo) erstellt.
 Gehostet wird sie auf [Cloudflare Pages](https://pages.cloudflare.com), der Quellcode ist [auf GitHub](https://github.com/ctrleon/personal-site) verfügbar.

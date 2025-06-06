@@ -76,7 +76,6 @@ pygmentsStyle = "nord"
   customHeadHTML = '''
     <link rel="stylesheet" href="/css/custom.css">
     <link rel="stylesheet" href="/css/syntax.css">
-    <script src="/js/codeblock-copy.js"></script>
   '''
 
 [minify]
