@@ -1,20 +1,25 @@
+:root {
+  --content-width: 1120px;
+  --container-width: 810px;
+
+  --light-primary-color: 255, 255, 255;
+  --light-secondary-color: #dddddd;
+  --light-tertiary-color: #2a2a2a;
+  --light-text-color: black;
+}
+
 /* Prepend a dollar sign to shell commands */
 code.language-bash > span.line::before {
   content: "$";
   margin-right: 1em;
-  color: #4c566a;
+  color: var(--dark-primary-color);
   font-weight: bold;
 }
 
 pre {
   position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--dark-tertiary-color);
   border-radius: 4px;
-
-  /* Wrap long lines instead of scrolling */
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-wrap: anywhere;
 }
 
 @media only screen and (max-width: 820px) {

@@ -1,7 +1,7 @@
 :root {
-  --dark-primary-color: 34, 39, 46;
-  --dark-secondary-color: #2d333b;
-  --dark-tertiary-color: #646464;
+  --dark-primary-color: 18, 18, 18;
+  --dark-secondary-color: #0d0d0d;
+  --dark-tertiary-color: #2a2a2a;
   --dark-text-color: white;
 }
 
@@ -20,7 +20,7 @@ html {
 }
 
 .nav-links .nav-icons-divider {
-  color: var(--dark-secondary-color);
+  color: var(--dark-tertiary-color);
 }
 
 a:hover .feather-moon {
