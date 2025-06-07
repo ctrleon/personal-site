@@ -5,7 +5,7 @@ date: 2025-05-19T22:01:37+02:00
 lastmod: 2025-05-19
 showTableOfContents: true
 # tags: ["",]
-title: "Scheduling Signal messages using signal-cli and cron"
+title: "Automate countdown messages on Signal using Go and signal-cli"
 type: "post"
 ---
 

@@ -62,7 +62,6 @@ pygmentsStyle = "nord"
   avatarURL = "/images/avatar.webp"
   avatarAltText = "avatar"
   avatarSize = "size-m"
-  dateFormat = "January 2, 2006"
   numberPostsOnHomePage = 4
   showBackToTopButton = true
   showPostsOnHomePage = ""
