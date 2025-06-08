@@ -33,8 +33,14 @@ Any use of my suggestions is at your own risk.
     dd if=1vyrain.iso of=USB_DISK bs=8M status=progress
     ```
 5. Boot in UEFI mode from the flash drive, with Secure Boot off via onboard USB ports.
+6. Select the choice to flash a custom BIOS from URL. Then enter the URL of the Skulls ROM, in my case: `192.168.0.119:800/x230.rom`.
+7. On reboot, the Skulls boot splash appeared and SeaBIOS loaded successfully.
+8. After selecting my SSD with Linux Mint 22 (with full-disk encryption), GRUB appeared to hang. A blog post revealed this is a known issue: the password prompt is invisible. Typing the password blindly allows the system to boot.
+9. The post also explains that a permanent fix requires compiling a custom kernel with framebuffer support for Coreboot, since Linux Mint 22’s default kernel lacks the necessary modules.
 
 ## References
+
 - https://github.com/merge/skulls/tree/master/x230
 - https://github.com/n4ru/1vyrain
 - https://docs.python.org/3/library/http.server.html
+- https://momi.ca/posts/2021-11-07-luksgrub.html
