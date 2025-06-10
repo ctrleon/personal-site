@@ -5,21 +5,20 @@ date: 2025-06-07T21:28:25+02:00
 lastmod: 2025-06-07
 showTableOfContents: true
 tags: ["Coreboot", "ThinkPad"]
-title: "Flashing a Skulls coreboot image to a ThinkPad X230 with 1vyrain"
+title: "Flash Skulls Coreboot on ThinkPad X230 via 1vyrain"
 type: "post"
 ---
 
-These are my personal notes on flashing the [Skulls](https://github.com/merge/skulls) Coreboot image to a ThinkPad X230 using [1vyrain](https://github.com/n4ru/1vyrain).
-This is not a tutorial, but rather a record of the steps and observations from my process.
 
-For up-to-date, in-depth help, refer to [1vyrain](https://github.com/n4ru/1vyrain) and [Skulls](https://github.com/merge/skulls) documentation.
-Use these notes at your own risk.
+I recently flashed the BIOS on my ThinkPad X230 with a Skulls Coreboot image, using 1vyrain. This method allows BIOS flashing on Ivy Bridge-based XX30 series ThinkPads without external flashing, which requires disassembly and a hardware programmer.
+
+BIOS flashing always carries risks. If something goes wrong with 1vyrain, recovery may require a hardware programmer. Review the official documentation carefully, and use these notes only as a supplement to your own research.
 
 ## Introduction
 
+- What is 1vyrain? How does it work?
 - What is Coreboot? Benefits? Downsides?
 - What is Skulls? Comparison to other distributions.
-- What is 1vyrain? How does it work?
 
 ## Installation
 
@@ -33,13 +32,13 @@ My BIOS version was 2.50 so I did not have to run [IVprep](https://github.com/n4
 I made a backup of the stock BIOS using [flashrom](https://github.com/flashrom/flashrom).
 
 ```bash
-sudo flashrom -p internal -r bios_backup.rom --ifd -i bios
+sudo flashrom -p internal -r bios_backup.romFlash Skulls Coreboot on ThinkPad X230 via 1vyrain --ifd -i bios
 ```
 
 ### Host the Skulls ROM on an HTTP server
 
 `1vyrain` supports custom BIOS images from an HTTP URL.
-I downloaded the image and hosted it on a local HTTP server in another machine.
+I downloaded the image and hosted it on a local HTTP server in another machine running PopOS 22.04.
 
 #### Download the Skulls ROM
 
@@ -57,6 +56,12 @@ I also checked the integrity of the image.
 
 ```bash
 sha256sum --check x230_coreboot_seabios_free_5243dd96de_top.rom.sha256
+```
+
+At last, I checked that the image was exactly 4 MB.
+
+```bash
+ls -lh x230_coreboot_seabios_free_5243dd96de_top.rom
 ```
 
 #### Run the local HTTP server
